@@ -26,39 +26,48 @@ const proyectos = [
 
 
     {
-        titulo: "Proyecto 2",
+        titulo: "Sistema de Gestión de Comercio Exterior",
 
-        tipo: "Sitio web",
+        tipo: "Sistema de gestión",
 
         plataformas: [
             "Web"
         ],
 
         descripcion:
-            "Descripción del segundo proyecto.",
+            "Sistema web multiempresarial para la gestión de procesos y operaciones de comercio exterior.",
 
         imagenes: [
-            "public/proyectos/proyecto-2/1.jpg",
-            "public/proyectos/proyecto-2/2.jpg"
+            "public/proyectos/tradeflow/tradeflow1.png",
+            "public/proyectos/tradeflow/tradeflow2.png",
+            "public/proyectos/tradeflow/tradeflow3.png",
+            "public/proyectos/tradeflow/tradeflow4.png",
+            "public/proyectos/tradeflow/tradeflow5.png",
+            "public/proyectos/tradeflow/tradeflow6.png"
         ]
     },
 
 
     {
-        titulo: "Proyecto 3",
+        titulo: "Sitio Web Corporativo",
 
-        tipo: "Aplicación móvil",
+        tipo: "Sitio web",
 
         plataformas: [
-            "Android"
+            "Web",
+            "Movil"
         ],
 
         descripcion:
-            "Descripción del tercer proyecto.",
+            "Sitio web corporativo desarrollado para presentar la empresa, sus servicios y facilitar el contacto con clientes.",
 
         imagenes: [
-            "public/proyectos/proyecto-3/1.jpg",
-            "public/proyectos/proyecto-3/2.jpg"
+            "public/proyectos/globaltrade/globaltrade1.png",
+            "public/proyectos/globaltrade/globaltrade2.png",
+            "public/proyectos/globaltrade/globaltrade3.png",
+            "public/proyectos/globaltrade/globaltrade4.png",
+            "public/proyectos/globaltrade/globaltrade5.png",
+            "public/proyectos/globaltrade/globaltrade6.png"
         ]
     }
 
