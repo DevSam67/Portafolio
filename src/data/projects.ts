@@ -12,7 +12,7 @@ const projects: Project[] = [
     id: 1,
     name: "Sistema de Gestión para Gimnasio",
     type: "Sistema de gestión",
-    platforms: ["Web", "Móvil"],
+    platforms: ["Web"],
     description:
       "Sistema desarrollado para facilitar la gestión de clientes, mensualidades, asistencias, pagos y ventas de un gimnasio.",
     images: [
@@ -45,7 +45,7 @@ const projects: Project[] = [
     id: 3,
     name: "Sitio Web Corporativo",
     type: "Sitio web",
-    platforms: ["Web", "Móvil"],
+    platforms: ["Web"],
     description:
       "Sitio web corporativo desarrollado para presentar una empresa, comunicar sus servicios y facilitar el contacto con potenciales clientes.",
     images: [
