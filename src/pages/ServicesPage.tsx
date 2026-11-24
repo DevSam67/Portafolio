@@ -5,6 +5,7 @@ import { Reveal } from "@/components/common/Reveal";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { services } from "@/data/services";
 import { cn } from "@/lib/utils";
+import { whatsappForService } from "@/lib/site";
 
 const SERVICES_IMAGE =
   "https://images.pexels.com/photos/18144271/pexels-photo-18144271.jpeg?auto=compress&cs=tinysrgb&h=1000&w=1400";
@@ -50,7 +51,12 @@ export default function ServicesPage() {
             const isOffset = i % 2 === 1;
             return (
               <Reveal key={service.id}>
-                <article className="group relative grid gap-6 border-t border-white/[0.07] py-14 md:grid-cols-12 md:gap-8 md:py-20">
+                <a
+                  href={whatsappForService(service.title)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative grid gap-6 border-t border-white/[0.07] py-14 md:grid-cols-12 md:gap-8 md:py-20"
+                >
                   <span
                     className={cn(
                       "font-display text-7xl font-bold text-white/[0.07] transition-colors duration-700 group-hover:text-white/[0.14] md:col-span-2 md:text-8xl"
@@ -75,7 +81,7 @@ export default function ServicesPage() {
                   >
                     {service.description}
                   </p>
-                </article>
+                </a>
               </Reveal>
             );
           })}

@@ -6,7 +6,7 @@ import { SectionHeader } from "@/components/common/SectionHeader";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import projects from "@/data/projects";
 import { services } from "@/data/services";
-import { WHATSAPP_URLS } from "@/lib/site";
+import { WHATSAPP_URLS, whatsappForService } from "@/lib/site";
 
 const HERO_IMAGE =
   "https://images.pexels.com/photos/6424584/pexels-photo-6424584.jpeg?auto=compress&cs=tinysrgb&h=1100&w=1800";
@@ -114,8 +114,10 @@ function ServicesPreview() {
           {services.map((service, i) => (
             <li key={service.id}>
               <Reveal delay={i * 80}>
-                <Link
-                  to="/servicios"
+                <a
+                  href={whatsappForService(service.title)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group flex items-center justify-between gap-6 py-7 transition-colors duration-500 hover:text-foreground sm:py-9"
                 >
                   <span className="flex items-baseline gap-5 sm:gap-10">
@@ -125,7 +127,7 @@ function ServicesPreview() {
                     </span>
                   </span>
                   <ArrowUpRight className="size-6 shrink-0 text-muted-foreground opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100 sm:size-7" />
-                </Link>
+                </a>
               </Reveal>
             </li>
           ))}

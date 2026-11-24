@@ -29,4 +29,10 @@ export const services: Service[] = [
     description:
       "Desarrollo de aplicaciones móviles adaptadas a las necesidades de cada proyecto.",
   },
+  {
+    id: "electricas",
+    title: "Soluciones Eléctricas",
+    description:
+      "Soluciones eléctricas adaptadas a las necesidades de cada proyecto, abarcando instalación, mantenimiento y diagnóstico.",
+  },
 ];

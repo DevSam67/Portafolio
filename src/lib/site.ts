@@ -11,3 +11,8 @@ export const NAV_LINKS = [
   { label: "Proyectos", to: "/proyectos" },
   { label: "Contacto", to: "/contacto" },
 ] as const;
+
+export function whatsappForService(serviceTitle: string): string {
+  const text = `Hola Dev Sam, quiero mas informacion sobre ${serviceTitle}`;
+  return `https://wa.me/59170364875?text=${encodeURIComponent(text)}`;
+}
